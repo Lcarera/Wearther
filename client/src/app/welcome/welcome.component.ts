@@ -10,13 +10,13 @@ export class WelcomeComponent {
 
   onMouseOver(option: string) {
     if (option === 'warm') {
-      document.body.style.backgroundColor = '#E76F51';
+      document.body.style.backgroundColor = '#FFCABF';
     } else if (option === 'cold') {
-      document.body.style.backgroundColor = 'rgba(62, 185, 224, 0.65)';
+      document.body.style.backgroundColor = '#BFDAFF';
     }
   }
 
   onMouseOut() {
-    document.body.style.backgroundColor = 'white';
+    document.body.style.backgroundColor = '#FAF3DD';
   }
 }

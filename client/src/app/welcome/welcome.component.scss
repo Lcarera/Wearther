@@ -19,11 +19,11 @@
 }
 
 .warm {
-    color: #FFA500;
+    color: #FFA69E;
 }
 
 .cold {
-    color: #00BFFF;
+    color: #B8F2E6;
 }
 
 .warm:hover,
@@ -32,10 +32,26 @@
     background-color: transparent;
 }
 
-:host ::ng-deep .p-card.p-component{
+strong {
     transition: background-color 0.3s ease-in-out;
 }
 
-strong {
-    transition: background-color 0.3s ease-in-out;
+.wearther {
+    background: linear-gradient(to right, #FFA69E, #B8F2E6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#addCloathes {
+    text-transform: uppercase;
+    height: 4em !important;
+    width: 12em;
+    border-radius: 4em; 
+}
+
+#addCloathes:hover {
+    background-color: transparent;
+    border: 2px solid #5C415D;
+    color: #5C415D;
 }
