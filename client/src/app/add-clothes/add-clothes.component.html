@@ -1,0 +1,21 @@
+<section class="form-container">
+  <form [formGroup]="clothForm" (ngSubmit)="addCloth()">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput />
+      <mat-hint>e.g. Brown Cargos</mat-hint>
+    </mat-form-field>
+
+    <div class="toggle-container">
+      <mat-slide-toggle formControlName="usableInWarmWeather" color="primary">
+        Usable in Warm Weather
+      </mat-slide-toggle>
+
+      <mat-slide-toggle formControlName="usableInColdWeather" color="primary">
+        Usable in Cold Weather
+      </mat-slide-toggle>
+    </div>
+
+    <button class="primary-button" mat-raised-button color="primary" type="submit">Add Cloth</button>
+  </form>
+</section>
